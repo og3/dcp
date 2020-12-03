@@ -1,18 +1,13 @@
-require_relative 'dragon'
+module FrameDragon
 
-class FrameDragon < Dragon
-
-  def initialize(name:, player_flag:)
-    @name = name
+  def frame_dragon_base_ststus
     @hp = 150
     @sp = 100
     @atc = 50
     @matg = 10
-    @def = 20
-    @mdef = 5
+    @def = 30
+    @mdef = 10
     @type = "frame"
-    @points = nil
-    @conditions = {}
-    @player = player_flag
   end
+
 end

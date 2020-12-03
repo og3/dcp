@@ -1,18 +1,13 @@
-require_relative 'dragon'
+module IceDragon
 
-class IceDragon < Dragon
-
-  def initialize(name:, player_flag:)
-    @name = name
-    @hp = 150
+  def ice_dragon_base_ststus
+    @hp = 100
     @sp = 150
-    @atc = 20
+    @atc = 10
     @matg = 50
-    @def = 10
+    @def = 20
     @mdef = 30
     @type = "ice"
-    @points = nil
-    @conditions = {}
-    @player = player_flag
   end
+
 end
